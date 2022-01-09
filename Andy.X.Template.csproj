@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <PackageType>Template</PackageType>
+        <PackageVersion>1.0.0</PackageVersion>
+        <PackageId>Andy.X.Template</PackageId>
+        <PackageIcon>andyX.png</PackageIcon>
+        <PackageLicenseFile>license.md</PackageLicenseFile>
+        <Title>Andy X Template for C#</Title>
+        <Author>Buildersoft</Author>
+        <Company>Buildersoft</Company>
+        <Description>Buildersoft Andy X Template for C#</Description>
+        <PackageTags>dotnet-new;templates;andy-x</PackageTags>
+        <TargetFramework>netstandard2.0</TargetFramework>
+
+        <IncludeContentInPackage>true</IncludeContentInPackage>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <ContentTargetFolders>content</ContentTargetFolders>
+        <Copyright>Copyright © Buildersoft 2022</Copyright>
+
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content  Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**"/>
+        <Compile Remove="**\*"/>
+    </ItemGroup>
+
+      <ItemGroup>
+    <None Include="Assets\andyX.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="Assets\license.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Assets\" />
+  </ItemGroup>
+
+</Project>

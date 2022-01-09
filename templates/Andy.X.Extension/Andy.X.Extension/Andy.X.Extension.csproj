@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>{TargetFramework}</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Buildersoft.Andy.X.Client" Version="2.0.0-rc3" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json.schemastore.org/template",
+    "author": "Buildersoft",
+    "classifications": ["Extension", "AndyX"],
+    "identity": "Andy.X.Extension",
+    "name": "Andy X Extension",
+    "shortName": "andyxextension",
+    "sourceName": "Andy.X.Extension",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "preferNameDirectory": true,
+    "symbols": {
+        "Framework":{
+            "type": "parameter",
+            "description": "The target framework for the project.",
+            "datatype":"choice",
+            "choices": [
+                {
+                    "choice": "net6.0"
+                },
+                {
+                    "choice": "net5.0"
+                }
+            ],
+            "defaultValue": "net6.0",
+            "replaces": "{TargetFramework}"
+        }
+    }
+}
