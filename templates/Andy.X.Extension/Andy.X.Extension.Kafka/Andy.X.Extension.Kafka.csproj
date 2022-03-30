@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+	  <!--<TargetFramework>{TargetFramework}</TargetFramework>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="config\kafka_config.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="config\kafka_config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="1.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Andy.X.Extension.Shared\Andy.X.Extension.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

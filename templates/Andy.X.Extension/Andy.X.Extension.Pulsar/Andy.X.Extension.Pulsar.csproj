@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <!--<TargetFramework>{TargetFramework}</TargetFramework>-->
+    <TargetFramework>net5.0</TargetFramework>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="config\pulsar_config.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="config\pulsar_config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Pulsar.Client" Version="2.10.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Andy.X.Extension.Shared\Andy.X.Extension.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

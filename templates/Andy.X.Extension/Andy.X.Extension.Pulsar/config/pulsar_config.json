@@ -1,0 +1,8 @@
+﻿{
+  "borkerServiceUrl": "localhost:6650",
+  "tenant": "public",
+  "namespace": "default",
+  "topic": "extension",
+
+  "apiKey": ""
+}

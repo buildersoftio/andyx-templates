@@ -1,0 +1,6 @@
+﻿{
+  "brokerServiceUrl": "localhost:9092",
+  "topic": "extension",
+
+  "apiKey": ""
+}
