@@ -1,9 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <!--<TargetFramework>{TargetFramework}</TargetFramework>-->
-    <TargetFramework>net5.0</TargetFramework>
-    <OutputType>Library</OutputType>
+	  <TargetFramework>{TargetFramework}</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
