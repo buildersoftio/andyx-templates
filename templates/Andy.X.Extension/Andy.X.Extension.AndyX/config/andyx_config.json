@@ -1,5 +1,4 @@
 ﻿{
-  "nodeServiceUrl": "http://localhost:6540",
   "tenant": "default",
   "product": "default",
   "component": "default",

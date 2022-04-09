@@ -4,8 +4,4 @@
 	  <TargetFramework>{TargetFramework}</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Configurations\" />
-  </ItemGroup>
-
 </Project>

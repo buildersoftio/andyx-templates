@@ -1,6 +1,4 @@
-﻿using Andy.X.Client;
-
-namespace Andy.X.Extension.AndyX
+﻿namespace Andy.X.Extension.AndyX
 {
     public class Startup
     {
