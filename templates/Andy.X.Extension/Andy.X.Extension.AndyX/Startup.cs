@@ -1,15 +1,19 @@
-﻿namespace Andy.X.Extension.AndyX
+﻿using Cortex.Core.Abstractions.Extensions;
+
+namespace Andy.X.Extension.AndyX
 {
-    public class Startup
+    public class Startup : IExtensionStartup
     {
         public Startup()
         {
 
         }
 
-        public void Handle(object content)
+        public bool Handle(object content)
         {
             Shared.RequestRunner.Run(Shared.Providers.Provider.AndyX, content);
+
+            return true;
         }
     }
 }

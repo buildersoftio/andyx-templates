@@ -1,16 +1,19 @@
-﻿namespace Andy.X.Extension.Kafka
-{
-    public class Startup
-    {
+﻿using Cortex.Core.Abstractions.Extensions;
 
+namespace Andy.X.Extension.Kafka
+{
+    public class Startup : IExtensionStartup
+    {
         public Startup()
         {
 
         }
 
-        public void Handle(object content)
+        public bool Handle(object content)
         {
             Shared.RequestRunner.Run(Shared.Providers.Provider.Kafka, content);
+
+            return true;
         }
     }
 }

@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageType>Template</PackageType>
-        <PackageVersion>1.4.0</PackageVersion>
+        <PackageVersion>1.5.0</PackageVersion>
         <PackageId>Andy.X.Template</PackageId>
         <PackageIcon>andyX.png</PackageIcon>
         <PackageLicenseFile>license.md</PackageLicenseFile>

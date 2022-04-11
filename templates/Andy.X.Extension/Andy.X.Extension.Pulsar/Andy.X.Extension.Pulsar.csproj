@@ -1,21 +1,25 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-	  <TargetFramework>{TargetFramework}</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>{TargetFramework}</TargetFramework>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="config\pulsar_config.json" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Remove="config\pulsar_config.json" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Content Include="config\pulsar_config.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
+	<ItemGroup>
+		<Content Include="config\pulsar_config.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Andy.X.Extension.Shared\Andy.X.Extension.Shared.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Andy.X.Extension.Shared\Andy.X.Extension.Shared.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Cortex.Core" Version="1.0.0-preview6" />
+	</ItemGroup>
 
 </Project>
